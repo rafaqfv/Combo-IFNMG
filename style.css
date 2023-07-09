@@ -27,6 +27,7 @@ body {
   background-size: contain;
   background-position: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100vh;
 }
@@ -37,6 +38,7 @@ span {
 
 .container {
   height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -83,8 +85,7 @@ span {
 }
 
 .container_caixa {
-  margin: 3em;
-  place-items: center;
+  margin: 0 3em;
   max-width: 100%;
 }
 
@@ -92,8 +93,6 @@ span {
   text-align: left;
   place-items: center;
   display: grid;
-  gap: 10px;
-  padding: 20px;
 }
 
 .secundario img {
