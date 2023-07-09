@@ -1,4 +1,3 @@
-@charset "UTF-8";
 
 :root {
     --branco-principal: #FFFFFF;
@@ -32,7 +31,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .container_botao {
@@ -51,12 +50,12 @@ body {
 }
 
 .container_aviso {
-    font-size: 12px;
+    font-size: 1em;
     color: var(--cinza-secundario);
 }
 
 .container_titulo {
-    font-size: 28px;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -70,7 +69,71 @@ body {
 
 .secundario {
     text-align: center;
-    align-items: center;
+    place-items: center;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.secundario img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.telas {
+    text-align: center;
+    padding: 30px;
+}
+
+.dispositivos {
+    list-style: none;
+    display: flex;
     justify-content: center;
-    margin: auto 9em;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.telas h1 {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.dispositivos img {
+    max-width: 100%;
+}
+
+.dispositivos h2 {
+    font-size: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80vw;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    transition-duration: .5s;
+}
+
+footer > ul > li > a:hover {
+    color: var(--botao-azul);
+    text-decoration: underline;
 }
