@@ -25,7 +25,6 @@ body {
   background-image: url(img/Background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -75,10 +74,6 @@ span {
   font-weight: 300;
 }
 
-.secundario .container_aviso {
-  padding-right: 3em;
-}
-
 .container_titulo {
   font-size: 2em;
   font-weight: 700;
@@ -100,12 +95,16 @@ span {
 }
 
 .secundario img {
-  max-width: 650px;
-  padding: 2em;
+  max-width: 100%;
+}
+
+.container_descricao {
+  max-width: 50%;
+  
 }
 
 .secundario .container_descricao {
-  padding: 2em;
+  padding: 0 2em;
 }
 
 .telas {
@@ -187,19 +186,20 @@ footer > ul > li > a:hover {
   }
 
   .secundario img {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .principal {
     background: none;
     grid-template-rows: 1fr;
     margin: 0;
-    max-width: 100%;
   }
 
   .container_descricao {
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: end;
+    text-align: center;
+    max-width: 100%;
   }
 }
