@@ -100,8 +100,8 @@ span {
 }
 
 .secundario img {
-  width: 100%;
   max-width: 650px;
+  padding: 2em;
 }
 
 .secundario .container_descricao {
@@ -188,7 +188,6 @@ footer > ul > li > a:hover {
 
   .secundario img {
     max-width: 300px;
-    padding: 2em;
   }
 
   .principal {
